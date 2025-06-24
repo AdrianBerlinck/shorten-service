@@ -8,4 +8,4 @@ module.exports = {
   transform: {
     ...tsJestTransformCfg,
   },
-};
+};0

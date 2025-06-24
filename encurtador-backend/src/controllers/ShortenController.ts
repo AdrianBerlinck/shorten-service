@@ -8,6 +8,7 @@ export async function shortenController(app: FastifyInstance) {
             const identifier = await shortenService.register(body);
             return identifier;
         } catch (error: any) {
+            console.log(error)
             return reply.status(404).send({ error: "Not Found" })
         }
     })
